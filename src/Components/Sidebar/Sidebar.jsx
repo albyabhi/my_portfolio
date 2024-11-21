@@ -12,7 +12,7 @@ const Sidebar = ({ onSelect }) => {
   return (
     <div className="sidebar">
       <div className="sideHead">
-        <h1>Alby abhi</h1>
+        <h1>Alby Ab</h1>
         <h2>Developer</h2>
       </div>
       <button 

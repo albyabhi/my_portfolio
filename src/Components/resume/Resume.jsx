@@ -72,8 +72,14 @@ const Resume = () => {
       </section>
 
       <div className="download-btn-container">
-        <button href={resume} download="Alby_AB_Resume.pdf" className="download-btn">Download Resume</button>
-      </div>
+      <a 
+  href="https://drive.google.com/uc?id=1jXUnT0a5SJuiHYrjDSkQQ6sPC4AQeFZu&export=download" 
+  download="Alby_AB_Resume.pdf" 
+  className="download-btn"
+>
+    Download Resume
+  </a>
+</div>
 
     </div>
   );
