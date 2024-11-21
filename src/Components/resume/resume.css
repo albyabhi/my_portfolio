@@ -106,7 +106,8 @@
   
   @media only screen and (max-width: 480px) {
     .resume-container {
-      margin: 5px;
+      margin: 7px;
+      margin-bottom: 40px;
     }
   
     .download-btn {
