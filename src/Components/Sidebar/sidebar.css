@@ -1,0 +1,112 @@
+/* Sidebar button styling */
+.sidebar-btn {
+  margin: 10px 0;
+  padding: 15px 30px;
+  border-radius: 20px;
+  background-color: #1B1A55;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 80%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 0; /* Start with the button hidden */
+  animation: slideInFromLeft 1s forwards; /* Add slide-in animation for desktop */
+}
+
+/* Sidebar container */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px; /* Reduced padding */
+  width: 250px; /* Reduced width */
+  height: 80vh; /* Reduced height */
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+/* When sidebar is on mobile, make it horizontal (like an Appbar) */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width */
+    height: 60px; /* Set a fixed height for the appbar-like effect */
+    flex-direction: row; /* Align items horizontally */
+    justify-content: space-evenly; /* Space out buttons */
+    position: sticky; /* Keep the sidebar fixed at the top */
+    top: 0; /* Stick to the top of the page */
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .sidebar-btn {
+    margin: 0 5px; /* Reduce margin between buttons */
+    padding: 8px 15px; /* Adjust padding to make buttons smaller */
+    width: auto; /* Make the width auto for horizontal layout */
+    font-size: 14px; /* Reduce font size */
+    opacity: 0; /* Start with the button hidden */
+    animation: slideDown 1s forwards; /* Add slide-down animation for mobile */
+  }
+
+  .sideHead {
+    display: none; /* Hide the header on mobile */
+  }
+}
+
+/* Sidebar button hover effect */
+.sidebar-btn:hover {
+  background-color: #d1d1d1;
+  color: #070F2B;
+  transform: scale(1.05);
+}
+
+.sidebar-btn.selected {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Side header */
+.sideHead {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.sideHead h1 {
+  font-size: 44px;
+  font-weight: bold;
+  color: #3498db;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sideHead h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #3498db;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for desktop slide-in animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for mobile slide-down animation */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

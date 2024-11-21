@@ -1,0 +1,180 @@
+/* Base Styles (for desktop and larger screens) */
+.content-container {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: center; /* Center both sections horizontally */
+  align-items: center; /* Center both sections vertically */
+  padding: 100px; /* Adjusted horizontal and vertical padding */
+  min-height: 80vh; /* Full viewport height to center vertically */
+  gap: 20px; /* Small space between the sections */
+}
+
+.left-section,
+.right-section {
+  opacity: 0; /* Initially set to invisible */
+  transform: translateX(100%); /* Start off-screen from the right */
+  animation: slideInRight 1s ease-out forwards; /* Apply slide-in animation */
+}
+
+/* Animation for sliding content from right to left */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Left section (content) */
+.left-section {
+  flex: 1;
+  max-width: 45%; /* Restrict width to keep the sections closer */
+  animation-delay: 0.2s; /* Slight delay for the left section */
+}
+
+.intro-text {
+  margin-bottom: 30px;
+}
+
+.greeting {
+  font-size: 34px;
+  color: #535C91;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 78px;
+  color: #9290C3;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: 'Pacifico', cursive;
+}
+
+.profession {
+  font-size: 34px;
+  color: #535C91;
+  margin-bottom: 30px;
+}
+
+.description {
+  max-width: 600px;
+  font-size: 24px;
+  color: #9290C3;
+  line-height: 1.6;
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
+.description p {
+  margin-bottom: 20px;
+}
+
+/* Right section (profile image) */
+.right-section {
+  flex: 1;
+  max-width: 45%; /* Restrict width to keep the sections closer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  animation-delay: 0.5s; /* Slight delay for the right section */
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-container {
+    padding: 60px;
+  }
+
+  .left-section,
+  .right-section {
+    max-width: 100%; /* Allow full width for smaller screens */
+  }
+
+  .right-section {
+    margin-top: 20px;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .profession, .greeting {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .profile-image {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    padding: 30px; /* Add padding to the mobile container */
+    gap: 20px; /* Maintain consistent spacing on smaller screens */
+  }
+
+  .left-section,
+  .right-section {
+    max-width: 100%; /* Allow full width for smaller screens */
+  }
+
+  /* Move the profile image to the top (first column) on tablet and mobile views */
+  .right-section {
+    order: -1; /* Move right section to the top */
+    margin-top: 0; /* Remove top margin to avoid extra space */
+  }
+
+  .name {
+    font-size: 46px;
+  }
+
+  .profession, .greeting {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 24px; /* Further reduce font size on smaller devices */
+    line-height: 1.4; /* Reduce line height to avoid crowding */
+  }
+
+  .profile-image {
+    max-width: 350px; /* Smaller size for mobile devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 38px; /* Even smaller for very small screens */
+  }
+
+  .greeting, .profession {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 22px; /* Tiny font size for very small devices */
+  }
+
+  .profile-image {
+    max-width: 200px; /* Further reduce the profile image size */
+  }
+}
+

@@ -1,0 +1,133 @@
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .resume-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    animation: fadeIn 1.5s ease-out; /* Fade-in effect applied */
+  }
+  
+  h1 {
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: #9290C3;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  h3 {
+    color: #535C91;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  .download-btn {
+    margin: 10px 0 50px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: #1B1A55;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .download-btn:hover {
+    background-color: #d1d1d1;
+    color: #070F2B;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .resume-container {
+      margin: 10px;
+    }
+  
+    .download-btn {
+      width: 80%;
+      padding: 12px 20px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    h3 {
+      font-size: 18px;
+    }
+  
+    ul {
+      margin-left: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .resume-container {
+      margin: 5px;
+    }
+  
+    .download-btn {
+      width: 90%;
+      padding: 10px 18px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    h3 {
+      font-size: 16px;
+    }
+  
+    ul {
+      margin-left: 10px;
+    }
+  }
+  
