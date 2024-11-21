@@ -23,7 +23,7 @@ const Sidebar = ({ onSelect }) => {
       <button 
         className={`sidebar-btn ${selected === 'skill' ? 'selected' : ''}`} 
         onClick={() => handleSelect('skill')}>
-        Skill
+        Skills
       </button>
       <button 
         className={`sidebar-btn ${selected === 'works' ? 'selected' : ''}`} 
