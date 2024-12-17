@@ -20,7 +20,7 @@ const projects = [
   {
     name: 'Studio Event Management',
     description: 'A website design for a studio specializing in wedding and event photography and videography.',
-    github: 'https://github.com/albyabhi/websites/tree/main/studio%20event',
+    github: 'https://event-management-site-albyabhi.netlify.app/',
   },
   {
     name: 'Football Page',
@@ -43,7 +43,7 @@ const Works = () => {
             <h2>{project.name}</h2>
             <p>{project.description}</p>
             <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
-              Github
+              Github or page
             </a>
           </div>
         ))}

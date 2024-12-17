@@ -61,13 +61,14 @@
   .sidebar {
     width: 100%; /* Full width */
     height: 50px; /* Even smaller height for ultra-small screens */
-    padding: px; /* Adjust padding to prevent overflow */
+    padding: 5px; /* Adjust padding to prevent overflow */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
   }
 
   .sidebar-btn {
     margin: 0 2px; /* Further reduce margin between buttons */
     padding: 9px 10px; /* Further reduce padding */
-    font-size: 15px; /* Smaller font size */
+    font-size: 14px; /* Smaller font size */
     opacity: 0; /* Start with the button hidden */
     animation: slideDown 1s forwards; /* Add slide-down animation for mobile */
   }

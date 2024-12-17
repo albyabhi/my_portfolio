@@ -3,6 +3,9 @@ import './content.css';
 import ProfileImage from '../Content/images/img.jpg';
 
 const Content = () => {
+
+
+
   return (
     <div className="content-container">
       <div className="left-section">
