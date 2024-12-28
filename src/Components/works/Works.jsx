@@ -5,7 +5,7 @@ const projects = [
   {
     name: 'Nomadgram',
     description: 'final-year social media web application built using the MERN stack.includes features like posting, liking, commenting, and exploring peoples profiles.for travelers to share their visited places and travel routes, with a travel guide feature.',
-    github: 'https://github.com/albyabhi/TravelSocialMedia',
+    github: 'https://nomadgram-albyabhi.netlify.app/',
   },
   {
     name: 'Real Estate Website',
