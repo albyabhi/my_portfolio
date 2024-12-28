@@ -8,14 +8,9 @@ const projects = [
     github: 'https://nomadgram-albyabhi.netlify.app/',
   },
   {
-    name: 'Real Estate Website',
-    description: 'A real estate website design aimed at helping users find their desired homes and properties.',
-    github: 'https://github.com/albyabhi/websites/tree/main/Project',
-  },
-  {
-    name: 'TakeNote',
-    description: 'TakeNote is a note-taking website that allows users to create, manage, and save their notes in a database.',
-    github: 'https://github.com/albyabhi/websites/tree/main/TakeNote',
+    name: 'Football Page',
+    description: 'A web design dedicated to sharing football scores and highlights.',
+    github: 'https://knowfootball-albyabhi.netlify.app/',
   },
   {
     name: 'Studio Event Management',
@@ -23,9 +18,15 @@ const projects = [
     github: 'https://event-management-site-albyabhi.netlify.app/',
   },
   {
-    name: 'Football Page',
-    description: 'A web design dedicated to sharing football scores and highlights.',
-    github: 'https://github.com/albyabhi/websites/tree/main/football%20page',
+    name: 'Real Estate Website',
+    description: 'A real estate website design aimed at helping users find their desired homes and properties.',
+    github: 'https://github.com/albyabhi/websites/tree/main/Project',
+  },
+  
+  {
+    name: 'TakeNote',
+    description: 'TakeNote is a note-taking website that allows users to create, manage, and save their notes in a database.',
+    github: 'https://github.com/albyabhi/websites/tree/main/TakeNote',
   },
   {
     name: 'Turf Booking Website',
