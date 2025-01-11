@@ -8,6 +8,11 @@ const projects = [
     github: 'https://nomadgram-albyabhi.netlify.app/',
   },
   {
+    name: 'Interactive seat booking system',
+    description: 'An interactive and dynamic seat booking front-end system using Vite-React, with state management efficiently handled through Redux, utilizing features like store and slices.',
+    github: 'https://interactive-seat-booking-albyabhi.netlify.app/',
+  },
+  {
     name: 'Football Page',
     description: 'A web design dedicated to sharing football scores and highlights.',
     github: 'https://knowfootball-albyabhi.netlify.app/',

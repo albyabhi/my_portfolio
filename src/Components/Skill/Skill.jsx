@@ -7,7 +7,7 @@ const Skill = () => {
     backend: ['Node.js', 'JavaScript (for backend development)', 'MongoDB'],
     database: ['MySQL', 'SQL'],
     tools: ['Git (Version Control)', 'VS Code (Code Editor)', 'Eclipse (IDE)'],
-    advancedJava: ['JDBC', 'Hibernate', 'Spring Boot'],
+    advancedJava: ['JDBC', 'Hibernate'],
     design: ['Adobe Photoshop', 'Adobe Premiere Pro', 'Adobe After Effects'],
     other: ['Object-Oriented Programming', 'Data Structures & Algorithms', 'Software Engineering'],
   };
