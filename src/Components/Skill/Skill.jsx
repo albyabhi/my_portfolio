@@ -3,7 +3,7 @@ import './Skill.css'; // Make sure to create this CSS file
 
 const Skill = () => {
   const skills = {
-    frontend: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Material-UI', 'Bootstrap', 'Responsive Web Design', 'User Interface Design'],
+    frontend: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux' , 'Material-UI', 'Bootstrap', 'Responsive Web Design', 'User Interface Design'],
     backend: ['Node.js', 'JavaScript (for backend development)', 'MongoDB'],
     database: ['MySQL', 'SQL'],
     tools: ['Git (Version Control)', 'VS Code (Code Editor)', 'Eclipse (IDE)'],
