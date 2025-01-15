@@ -8,6 +8,11 @@ const projects = [
     github: 'https://nomadgram-albyabhi.netlify.app/',
   },
   {
+    name: 'Capture-it',
+    description: 'A web app created using the MERN stack to make an album that captures moments of ourselves and the people we love, for every small or big event, allowing collaboration by collecting images from everyone into one album.' ,
+    github: 'https://capture-it-albyabhi.netlify.app/',
+  },
+  {
     name: 'Interactive seat booking system',
     description: 'An interactive and dynamic seat booking front-end system using Vite-React, with state management efficiently handled through Redux, utilizing features like store and slices.',
     github: 'https://interactive-seat-booking-albyabhi.netlify.app/',
