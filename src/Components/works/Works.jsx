@@ -8,6 +8,11 @@ const projects = [
     github: 'https://nomadgram-albyabhi.netlify.app/',
   },
   {
+    name: 'AutoCompose',
+    description: 'An email-generating AI text generation interface created using the MERN stack, powered by Gemini text generation.',
+    github: 'https://autocompose-albyabhi.netlify.app/',
+  },
+  {
     name: 'Capture-it',
     description: 'A web app created using the MERN stack to make an album that captures moments of ourselves and the people we love, for every small or big event, allowing collaboration by collecting images from everyone into one album.' ,
     github: 'https://capture-it-albyabhi.netlify.app/',
